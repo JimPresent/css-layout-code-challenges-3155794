@@ -27,12 +27,18 @@ img {
 .main {
   margin: 0 auto;
   padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  grid-auto-flow: dense;
 }
 
 .card {
   display: flex;
   border: 0.5rem solid black;
   container-type: inline-size;
+ 
 }
 
 @container (min-width: 60ch) {
@@ -67,6 +73,6 @@ img {
   text-transform: uppercase;
 }
 
-/* .featured {
+.featured {
   grid-column: span 2;
-} */
+}
